@@ -1,0 +1,24 @@
+name: OffEmojies
+version: '1.1'
+main: ru.offneko.OffEmojies
+api-version: '1.20'
+author: OffNeko
+description: The Ultimate Words-to-Emojis Replacer
+
+commands:
+  emoji:
+    description: Help-command emoji
+    usage: /emoji
+    aliases: [em, emojis]
+
+permissions:
+  offemojies.use:
+    description: Permission in command /emoji
+    default: true
+  offemojies.list:
+    description: Permission in command /emoji list
+    default: true
+  offemojies.reload:
+    description: Permission in command /emoji reload
+    default: op
+

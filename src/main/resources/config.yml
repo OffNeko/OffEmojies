@@ -1,0 +1,85 @@
+# ╔═
+# ║         OffEmojies v1.1 (Beta)
+# ║  author: OffNeko
+# ║
+# ║  Colors: &a&f, &#ff8800
+# ║  Aliases: ["love", "<3", "heart"]
+# ║
+# ║  /emoji — help menu
+# ║  /emoji list — list of categories
+# ║  /emoji list <category> — emojis in a category
+# ║  /emoji search <query> — search emojis
+# ║  /emoji reload — reload configuration
+# ╚═
+
+settings:
+  # Replace emojis in commands (/me, /say, /msg, etc.)
+  replace-in-commands: true
+
+emojies:
+  emotions:
+    display-name: "&eEmotions"
+    icon: "😀"
+    emojis:
+      smile:
+        chat: "😊"
+        aliases: ["happy", "smile"]
+      cry:
+        chat: "😢"
+        aliases: ["sad", "cry"]
+      cool:
+        chat: "😎"
+        aliases: ["cool", "awesome"]
+      ogo:
+        chat: "😮"
+        aliases: ["wow", "omg"]
+
+  gestures:
+    display-name: "&eGestures"
+    icon: "👊"
+    emojis:
+      heart:
+        chat: "❤"
+        aliases: ["love", "<3", "heart"]
+      punch:
+        chat: "👊"
+        aliases: ["punch", "brofist"]
+
+  food:
+    display-name: "&eFood"
+    icon: "🍔"
+    emojis:
+      apple:
+        chat: "🍎"
+        aliases: ["apple", "fruit"]
+      pizza:
+        chat: "🍕"
+        aliases: ["pizza"]
+
+messages:
+  prefix: "&#ff8800[OffEmojies]&r &7»&f "
+  no-permission: "&cYou do not have permission to use this command!"
+  reload-success: "&aConfiguration reloaded successfully!"
+  list-header: "&#ff8800=== Available Emojis ==="
+  list-category-header: "&#ff8800=== {icon} {name} &7({count}) ==="
+  list-format: "&7{key} &f→ &r{emoji}"
+  list-hover: "&eClick to insert: &f{key}"
+  emoji-hover: "&7Emoji: &f{key} &7| &f{emoji} &7| Hover to check"
+  category-line: "&r{icon} &f{name} &7({count})"
+  category-hover: "&eClick to open category"
+  search-header: "&#ff8800=== Search: &f{query}&#ff8800 ==="
+  search-format: "&7{key} &f→ &r{emoji} &7[{category}]"
+  search-empty: "&cNo emojis found."
+  help:
+    - "&#ff8800=== OffEmojies ==="
+    - "&7/emoji &f— show this help menu"
+    - "&7/emoji list &f— view emoji categories"
+    - "&7/emoji list <category> &f— view emojis in category"
+    - "&7/emoji search <query> &f— search for an emoji"
+    - "&7/emoji reload &f— reload the configuration"
+
+sound:
+  enabled: true
+  type: "BLOCK_NOTE_BLOCK_PLING"
+  volume: 0.5
+  pitch: 1.0
